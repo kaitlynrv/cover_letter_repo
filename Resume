@@ -5,7 +5,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[letterpaper,10.5pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -57,7 +57,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-6pt}\scshape\raggedright\large
+  \vspace{-11pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -73,22 +73,22 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & #2 \\
-      \textit{\small#3} & \textit{\small #4} \\
+    \begin{tabular*}{1\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{\normalsize #1} & \normalsize #2 \\
+      \textit{\small #3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
     \end{tabular*}\vspace{-7pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
-    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{1\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
     \end{tabular*}\vspace{-7pt}
 }
@@ -97,7 +97,7 @@
 
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
@@ -109,10 +109,6 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
 
 \begin{center}
     \textbf{\Huge \scshape Kaitlyn Vickers} \\ \vspace{1pt}
@@ -122,19 +118,18 @@
     \href{https://github.com/kaitlynrv}{\faGithub\, https://github.com/kaitlynrv}
 \end{center}
 
-
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Wake Forest University School of Business}{Winston Salem, NC}
-      {Master of Science in Business Analytics $|$ GPA: 3.73}{Jul. 2023 -- May 2024}
+      {Wake Forest University School of Business}{July 2023 -- May 2024}
+      {Master of Science in Business Analytics $|$ GPA: 3.73}{Winston Salem, NC}
       \item \textbf{\textit{\small{Relevant Courses:}}} \small{Analytics Software Technology, Probability and Statistical Modeling, Data Management, Predictive Analytics \& Data Mining, Prescriptive Analytics, Visual Analytics \& Influencing}
-      \vspace{2pt}
+      \vspace{-3pt}
       
     \resumeSubheading
-      {Tufts University}{Medford, MA}
-      {Bachelors of Science in Quantitative Economics and Mathematics $|$ GPA: 3.27}{Aug. 2019 -- May 2023}
+      {Tufts University}{August 2019 -- May 2023}
+      {Bachelors of Science in Quantitative Economics and Mathematics $|$ GPA: 3.27}{Medford, MA}
       \item \textbf{\textit{\small{Relevant Courses:}}} \small{Econometrics, International Finance, Statistics, Probability, Financial Economics, Mathematics of Poverty and Inequality, Real Analysis II, Economics of Social Interaction}
       \vspace{.5pt}
   \resumeSubHeadingListEnd
@@ -146,16 +141,17 @@
   \resumeSubHeadingListStart
 
     \resumeSubheading
-      {Graduate Analyst Consultant for The Sierra Club}{Sep. 2023 -- Present}
+      {Graduate Analyst Consultant for The Sierra Club}{September 2023 -- Present}
       {Wake Forest University School of Business}{Winston Salem, NC}
       \resumeItemListStart
         \resumeItem{Leading a data-driven study on air quality disparities, revealing significant variations in PM2.5 levels between socioeconomically diverse areas; enhancing public understanding of environmental justice issues}
         \resumeItem{Engineering a Python-based data acquisition system, converting JavaScript code and collecting over 10,000 data points from PurpleAir; demonstrating adaptability in learning and applying new programming languages}
         \resumeItem{Developing and communicating time series analysis insights, resulting in a user-friendly visualization for website implementation}
       \resumeItemListEnd
+      \vspace{-10pt}
 
     \resumeSubheading
-      {Shift Manager, Barista Trainer \& Barista}{Apr. 2019 -- May 2023}
+      {Shift Manager, Barista Trainer \& Barista}{April 2019 -- May 2023}
       {Starbucks Coffee Co.}{Medford, MA}
       \resumeItemListStart
         \resumeItem{Effectively managed daily operations, leading a team of 10\texttt{+} employees; achieved a 20\% increase in team efficiency and a notable rise in customer satisfaction}
@@ -171,8 +167,9 @@
       \resumeProjectHeading
           {\textbf{Customer Churn Analysis - BCG Forage Data Science Program} $|$ \emph{Python, Pandas, Scikit-learn}}{2023}
           \resumeItemListStart
-            \resumeItem{Developed a Random Forest model for PowerCo to predict customer churn; hypothesized a 20\% discount strategy to retain at-risk customers, leading to proposed retention strategies}
-            \resumeItem{Compiled and presented a business plan with insights on customer behavior and retention tactics}
+            \resumeItem{Conducted marketing analysis to inform the development of a Random Forest model for PowerCo, predicting customer churn and identifying effective retention strategies, including a 20\% discount for at-risk customers.}
+            \resumeItem{Compiled and presented a comprehensive business plan, integrating insights from customer behavior and market trends, to guide retention tactics and strategic decision-making.}
+
           \resumeItemListEnd
 
       \resumeProjectHeading
@@ -186,7 +183,7 @@
           {\textbf{Social Network Analysis in R} $|$ \emph{R, Network Analysis}}{2022}
           \resumeItemListStart
             \resumeItem{Analyzed modern labor movement using Starbucks’ unionization data, focusing on network dynamics}
-            \resumeItem{Employed advanced network analysis techniques to uncover patterns and provided insights into effective communication channels and key influencer engagement in a research paper}
+            \resumeItem{Employed advanced network analysis techniques to uncover patterns and provided insights into effective communication channels and key influencer engagement communicated in a research paper}
           \resumeItemListEnd
 
     \resumeSubHeadingListEnd
@@ -195,19 +192,30 @@
 
 %-----------SKILLS-----------
 \section{Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
+ \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
-    \textbf{Programming and Software}: Proficient in Python, R, SQL, MATLAB, Stata, LaTeX; experienced with AWS, Microsoft Office Suite (Word, Excel, PowerPoint, Outlook, Teams)
-    
-    \textbf{Data Analysis, Visualization, and Machine Learning}: Proficient in using Python libraries (pandas, NumPy, Matplotlib, seaborn, scipy) for data manipulation and analysis; skilled in advanced data visualization with Tableau and PowerBI; familiar with machine learning algorithms and tools (scikit-learn, TensorFlow).
+    \textbf{Programming and Software}: Proficient in Python, R, SQL, MATLAB, Stata, LaTeX; experienced with Amazon Web Services (AWS), HTML libraries, Microsoft Office Suite (Word, Excel, PowerPoint, Outlook, Teams)
 
-    \textbf{Statistical Analysis and Problem-Solving}: Proficient in statistical methods and tests; strong analytical skills focused on deriving actionable insights; effective in communicating complex data findings to diverse audiences.
+    \textbf{Data and Machine Learning}: Proficient in using Python libraries (pandas, NumPy, Matplotlib, seaborn, scipy) for data manipulation and analysis; skilled in advanced data visualization with Tableau and PowerBI; familiar with machine learning algorithms and tools (scikit-learn, TensorFlow), including deep learning and NLP (Natural Language Processing)
+
+    \textbf{Statistical Analysis and Problem-Solving}: Proficient in statistical methods and tests; strong analytical skills focused on deriving actionable insights; effective in communicating complex data findings 
 
     \textbf{Language Skills}: Fluent in Greek, professional proficiency in Japanese, elementary proficiency in Mandarin Chinese
 
     }}
  \end{itemize}
 
+%-----------LEADERSHIP AND COMMUNITY INVOLVEMENT-----------
+\section{Leadership and Community Involvement}
+  \resumeSubHeadingListStart
+
+    \resumeItem{\textbf{Financial Chair}, Wake Forest MSBA Student Engagement Council (2023): Managed substantial budgeting and financial activities in Excel for MSBA cohort-wide events}
+
+    \resumeItem{\textbf{Member}, Tufts Tutors (2020-2021): Provided tutoring services in mathematics to underprivileged students in Somerville, MA}
+
+    \resumeItem{\textbf{Volunteer}, Humane Society of Charlotte (2017-2020): Contributed to animal care and shelter activities}
+
+  \resumeSubHeadingListEnd
 
 %-------------------------------------------
 \end{document}
