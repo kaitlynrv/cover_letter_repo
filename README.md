@@ -1,4 +1,5 @@
 # cover_letter_repo
-This repository contains python script written in Google Colab to generate cover letters in Python and save as a PDF into your Google Drive.
+This repository contains LaTeX script written in Overleaf to generate resume and cover letter.
 
-The code is very elementary but customizable from headings to font type and size. I will personally be using this format to hopefully showcase some Python skill for future job applications
+Also elementary Python code for a cover letter
+Again, the code is very elementary but customizable from headings to font type and size. I will personally be using this format to hopefully showcase some coding skill for future job applications
