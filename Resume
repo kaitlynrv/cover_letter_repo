@@ -129,13 +129,13 @@
     \resumeSubheading
       {Wake Forest University School of Business}{Winston Salem, NC}
       {Master of Science in Business Analytics $|$ GPA: 3.73}{Jul. 2023 -- May 2024}
-      \item \textbf{\textit{Relevant Courses:}} Analytics Software Technology, Probability and Statistical Modeling, Data Management, Predictive Analytics \& Data Mining, Prescriptive Analytics, Visual Analytics \& Influencing
+      \item \textbf{\textit{\small{Relevant Courses:}}} \small{Analytics Software Technology, Probability and Statistical Modeling, Data Management, Predictive Analytics \& Data Mining, Prescriptive Analytics, Visual Analytics \& Influencing}
       \vspace{2pt}
       
     \resumeSubheading
       {Tufts University}{Medford, MA}
       {Bachelors of Science in Quantitative Economics and Mathematics $|$ GPA: 3.27}{Aug. 2019 -- May 2023}
-      \item \textbf{\textit{Relevant Courses:}} Econometrics, International Finance, Statistics, Probability, Financial Economics, Mathematics of Poverty and Inequality, Real Analysis II, Economics of Social Interaction
+      \item \textbf{\textit{\small{Relevant Courses:}}} \small{Econometrics, International Finance, Statistics, Probability, Financial Economics, Mathematics of Poverty and Inequality, Real Analysis II, Economics of Social Interaction}
       \vspace{.5pt}
   \resumeSubHeadingListEnd
 
