@@ -1,0 +1,213 @@
+%-------------------------
+% Resume in Latex
+% Author : Kaitlyn Vickers
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-6pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Kaitlyn Vickers} \\ \vspace{1pt}
+    \small 704-989-2146 $|$ \href{mailto:kaitlynrv@gmail.com}
+    {kaitlynrv@gmail.com} $|$ 
+    \href{https://www.linkedin.com/in/kaitlynrvickers/}{\faLinkedin\, www.linkedin.com/in/kaitlynrvickers} $|$
+    \href{https://github.com/kaitlynrv}{\faGithub\, https://github.com/kaitlynrv}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Wake Forest University School of Business}{Winston Salem, NC}
+      {Master of Science in Business Analytics $|$ GPA: 3.73}{Jul. 2023 -- May 2024}
+      \item \textbf{\textit{Relevant Courses:}} Analytics Software Technology, Probability and Statistical Modeling, Data Management, Predictive Analytics \& Data Mining, Prescriptive Analytics, Visual Analytics \& Influencing
+      \vspace{2pt}
+      
+    \resumeSubheading
+      {Tufts University}{Medford, MA}
+      {Bachelors of Science in Quantitative Economics and Mathematics $|$ GPA: 3.27}{Aug. 2019 -- May 2023}
+      \item \textbf{\textit{Relevant Courses:}} Econometrics, International Finance, Statistics, Probability, Financial Economics, Mathematics of Poverty and Inequality, Real Analysis II, Economics of Social Interaction
+      \vspace{.5pt}
+  \resumeSubHeadingListEnd
+
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Graduate Analyst Consultant for The Sierra Club}{Sep. 2023 -- Present}
+      {Wake Forest University School of Business}{Winston Salem, NC}
+      \resumeItemListStart
+        \resumeItem{Leading a data-driven study on air quality disparities, revealing significant variations in PM2.5 levels between socioeconomically diverse areas; enhancing public understanding of environmental justice issues}
+        \resumeItem{Engineering a Python-based data acquisition system, converting JavaScript code and collecting over 10,000 data points from PurpleAir; demonstrating adaptability in learning and applying new programming languages}
+        \resumeItem{Developing and communicating time series analysis insights, resulting in a user-friendly visualization for website implementation}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Shift Manager, Barista Trainer \& Barista}{Apr. 2019 -- May 2023}
+      {Starbucks Coffee Co.}{Medford, MA}
+      \resumeItemListStart
+        \resumeItem{Effectively managed daily operations, leading a team of 10\texttt{+} employees; achieved a 20\% increase in team efficiency and a notable rise in customer satisfaction}
+        \resumeItem{Strategically implemented inventory and financial management reforms, resulting in a 15\% reduction in waste, profit growth, and reducing labor costs by about 3\% that quarter}
+        \resumeItem{Mentored over 30 new staff, enhancing team collaboration and operational efficiency; recognized for outstanding leadership and training skills}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Customer Churn Analysis - BCG Forage Data Science Program} $|$ \emph{Python, Pandas, Scikit-learn}}{2023}
+          \resumeItemListStart
+            \resumeItem{Developed a Random Forest model for PowerCo to predict customer churn; hypothesized a 20\% discount strategy to retain at-risk customers, leading to proposed retention strategies}
+            \resumeItem{Compiled and presented a business plan with insights on customer behavior and retention tactics}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Fraud Detection Using Decision Trees} $|$ \emph{Python, SQL, Excel}}{2023}
+          \resumeItemListStart
+            \resumeItem{Enhanced a dataset and created visualizations to identify potential fraudulent activities; recommended preventive measures based on pattern detection, utilizing decision tree models to make prediction}
+            \resumeItem{Presented findings with recommendations for improving fraud detection protocols}
+          \resumeItemListEnd
+
+      \resumeProjectHeading
+          {\textbf{Social Network Analysis in R} $|$ \emph{R, Network Analysis}}{2022}
+          \resumeItemListStart
+            \resumeItem{Analyzed modern labor movement using Starbucks’ unionization data, focusing on network dynamics}
+            \resumeItem{Employed advanced network analysis techniques to uncover patterns and provided insights into effective communication channels and key influencer engagement in a research paper}
+          \resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+
+
+
+%-----------SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+    \textbf{Programming and Software}: Proficient in Python, R, SQL, MATLAB, Stata, LaTeX; experienced with AWS, Microsoft Office Suite (Word, Excel, PowerPoint, Outlook, Teams)
+    
+    \textbf{Data Analysis, Visualization, and Machine Learning}: Proficient in using Python libraries (pandas, NumPy, Matplotlib, seaborn, scipy) for data manipulation and analysis; skilled in advanced data visualization with Tableau and PowerBI; familiar with machine learning algorithms and tools (scikit-learn, TensorFlow).
+
+    \textbf{Statistical Analysis and Problem-Solving}: Proficient in statistical methods and tests; strong analytical skills focused on deriving actionable insights; effective in communicating complex data findings to diverse audiences.
+
+    \textbf{Language Skills}: Fluent in Greek, professional proficiency in Japanese, elementary proficiency in Mandarin Chinese
+
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
